@@ -1,9 +1,9 @@
 package com.asiainfo.chapter6.exercise;
 
 /**
- * p120Á·Ï°6
+ * p120ï¿½ï¿½Ï°6
  * 
- * @author zhangzw8@asiainfo.com\n 2015Äê8ÔÂ6ÈÕ
+ * @author zhangzw8@asiainfo.com\n 2015ï¿½ï¿½8ï¿½ï¿½6ï¿½ï¿½
  */
 public class Exercise_6 {
 	protected static int i = 1;

@@ -1,11 +1,11 @@
 package com.asiainfo.chapter6;
 
-import com.asiainfo.chapter6.exercise.Exercise_4;
+import com.asiainfo.chapter6.exercise.*;
 
 /**
- * ¼Ì³Ð·ÃÎÊÈ¨ÏÞ£¨Í¬Ê±¾ßÓÐ°ü·ÃÎÊÈ¨ÏÞ£©¡ª¡ªprotected
+ * ï¿½Ì³Ð·ï¿½ï¿½ï¿½È¨ï¿½Þ£ï¿½Í¬Ê±ï¿½ï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½protected
  * 
- * @author zhangzw8@asiainfo.com\n 2015Äê8ÔÂ6ÈÕ
+ * @author zhangzw8@asiainfo.com\n 2015ï¿½ï¿½8ï¿½ï¿½6ï¿½ï¿½
  */
 public class Test8 {
 	protected static String name = "Test8";
@@ -19,12 +19,12 @@ public class Test8 {
 
 class Car4 {
 	public void func() {
-		System.out.println(Test8.name);// protected¼æ¾ßÓÐ°ü·ÃÎÊÈ¨ÏÞ
+		System.out.println(Test8.name);// protectedï¿½ï¿½ï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½
 	}
 }
 
 class Car5 extends Test8{
 	public void func() {
-		System.out.println(Test8.name);// ¼Ì³Ð·ÃÎÊÈ¨ÏÞ
+		System.out.println(Test8.name);// ï¿½Ì³Ð·ï¿½ï¿½ï¿½È¨ï¿½ï¿½
 	}
 }
