@@ -5,6 +5,9 @@ package com.asiainfo.chapter2.exercises;
 
 /**
  * 锟斤拷习一
+ * <p>
+ * 说明：每章的练习均以Exercise_N命名，并未按照驼峰命名，其中N为练习题序号（和书本一致）
+ * </p>
  * 
  * @author zhangzhiwang
  * @date 2015锟斤拷4锟斤拷6锟斤拷
