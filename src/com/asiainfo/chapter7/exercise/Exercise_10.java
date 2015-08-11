@@ -1,20 +1,20 @@
 package com.asiainfo.chapter7.exercise;
 
 /**
- * p130Á·Ï°10
+ * p130ï¿½ï¿½Ï°10
  * 
- * @author zhangzw8@asiainfo.com\n 2015Äê8ÔÂ7ÈÕ
+ * @author zhangzw8@asiainfo.com\n 2015ï¿½ï¿½8ï¿½ï¿½7ï¿½ï¿½
  */
 public class Exercise_10 {
 	public static void main(String[] args) {
-		new Stem2(1);
+		new Stem23(1);
 	}
 }
 
 class Root2 {
-	Component12 c1 = new Component12(1);
-	Component22 c2 = new Component22(1);
-	Component32 c3 = new Component32(1);
+	Component123 c1 = new Component123(1);
+	Component223 c2 = new Component223(1);
+	Component323 c3 = new Component323(1);
 
 	public Root2(int i) {
 		System.out.println("Root2()");
@@ -22,9 +22,9 @@ class Root2 {
 }
 
 class Stem2 extends Root2 {
-	Component12 c1 = new Component12(1);
-	Component22 c2 = new Component22(2);
-	Component32 c3 = new Component32(3);
+	Component123 c1 = new Component123(1);
+	Component223 c2 = new Component223(2);
+	Component323 c3 = new Component323(3);
 
 	public Stem2(int i) {
 		super(i);
@@ -32,8 +32,8 @@ class Stem2 extends Root2 {
 	}
 }
 
-class Component12 {
-	public Component12(int i) {
+class Component123 {
+	public Component123(int i) {
 		System.out.println("Component12()");
 	}
 }
