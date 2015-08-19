@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter9;
 
 /**
  * 多态（向上/向下转型）

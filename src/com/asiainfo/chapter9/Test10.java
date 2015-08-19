@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter9;
 
 /**
  * 接口的属性默认都是public static final的，方法默认是public abstract的

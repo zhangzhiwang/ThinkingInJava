@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter9;
 
 /**
  * 协变返回类型——子类复写父类的方法，返回值类型不能比父类的大

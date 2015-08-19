@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter9;
 
 /**
  * 接口只能继承接口（不能继承其他类），但不可以实现接口

@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter9.exercise;
 
 
 /**
