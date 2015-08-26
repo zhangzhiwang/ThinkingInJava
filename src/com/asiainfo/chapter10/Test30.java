@@ -18,7 +18,8 @@ public class Test30 {
 	
 	class A {
 		public void func1() {
-			Test30.this.func1();// 如果去掉Test30.this.编译不会报错，但运行时会出问题，所以尽量避免外围类和内部类出现同名的现象
+			System.out.println("A.func1()");
+			Test30.this.func1();// 如果去掉Test30.this.编译不会报错，但运行时会出问题（无限递归，默认调用的是方法本身），所以尽量避免外围类和内部类出现同名的现象
 			func2();
 		}
 	}
