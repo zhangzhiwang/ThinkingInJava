@@ -33,6 +33,10 @@ public class Test24 {
 	}
 }
 
+class L {
+	public void func1() {}
+}
+
 class M {
 	public void func1() {
 		System.out.println("M.func1()");

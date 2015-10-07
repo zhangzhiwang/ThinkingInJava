@@ -13,3 +13,4 @@
 14.com.asiainfo.chapter10.Test2  why?
 15.优先使用类而不是接口 p201练习16上面一句话 why?
 16.抽象类有构造器但是不能实例化
+17.foreach的原理
