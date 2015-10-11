@@ -14,8 +14,8 @@ public class Exercise_1 {
 		list.add(new Gerbil(1));
 		list.add(new Gerbil(2));
 
-		for (Gerbil g : list) {
-			g.hop();
+		for (int i = 0; i < list.size(); i++) {
+			list.get(i).hop();
 		}
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * List的removeAll()方法——依据元
+ * List的removeAll()方法
  * 
  * @author zhangzw8@asiainfo.com
  * @date 2015年10月10日 上午8:18:06
