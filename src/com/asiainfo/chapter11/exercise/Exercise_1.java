@@ -33,4 +33,10 @@ class Gerbil {
 	public void hop() {
 		System.out.println(gerbilNumber);
 	}
+
+	@Override
+	public String toString() {
+		return "Gerbil [gerbilNumber=" + gerbilNumber + "]";
+	}
+
 }

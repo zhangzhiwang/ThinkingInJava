@@ -2,6 +2,7 @@ package com.asiainfo.chapter11.exercise;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -15,9 +16,24 @@ import net.mindview.util.TextFile;
  */
 public class Exercise_16 {
 	public static void main(String[] args) {
-		Set<String> set = new HashSet<String>(Arrays.asList("a", "e", "i", "o", "u"));
-		Set<String> words = new TreeSet<String>(new TextFile("src\\com\\asiainfo\\chapter11\\exercise\\Exercise_15.java","\\W+"));
+		Set<Character> vowels = new HashSet<Character>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
+		Set<String> words = new TreeSet<String>(new TextFile("src\\com\\asiainfo\\chapter11\\exercise\\Exercise_15.java", "\\W+"));
 		System.out.println(words);
-		
+
+		Iterator<String> it = words.iterator();
+		int total = 0;
+		while (it.hasNext()) {
+			String word = it.next();
+			char[] letters = word.toCharArray();
+			int count = 0;
+			for (char c : letters) {
+				if (vowels.contains(c)) {
+					count++;
+					total++;
+				}
+			}
+			System.out.println("\"" + word + "\"" + " has " + count + " vowel(s).");
+		}
+		System.out.println("All words have " + total + " vowel(s).");
 	}
 }
