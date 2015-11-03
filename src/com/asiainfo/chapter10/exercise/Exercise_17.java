@@ -1,7 +1,5 @@
 package com.asiainfo.chapter10.exercise;
 
-import sun.security.smartcardio.SunPCSC.Factory;
-
 /**
  * p201练习17
  * 
