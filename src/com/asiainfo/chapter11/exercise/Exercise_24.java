@@ -1,6 +1,9 @@
 package com.asiainfo.chapter11.exercise;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -20,14 +23,14 @@ public class Exercise_24 {
 		map.put("b", 2);
 		System.out.println(map);
 		Set<Entry<String, Integer>> set = map.entrySet();
-		Set<Entry<String, Integer>> keySet = new TreeSet<Entry<String, Integer>>(set);
-//		for (Entry<String, Integer> entry : set) {
-//			keySet.add(entry.getKey());
-//		}
-//		map.clear();
-//		for (String key : keySet) {
-//			map.put(key, map.get(key));
-//		}
-		System.out.println(map);
+		Set<String> keySet = new TreeSet<String>();
+		for (Entry<String, Integer> entry : set) {
+			keySet.add(entry.getKey());
+		}
+		Map<String, Integer> map2 = new LinkedHashMap<String, Integer>();
+		for (String key : keySet) {
+			map2.put(key, map.get(key));
+		}
+		System.out.println(map2);
 	}
 }
