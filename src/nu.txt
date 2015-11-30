@@ -18,3 +18,4 @@
 19.解释com.asiainfo.chapter11.Test22抛异常的原因。可参考课本p226练习7以及The_Thinking_in_Java_Annotated_Solution_Guide(TIJ4-solutions)p187
 20.foreach的原理是迭代器，可参考http://blog.csdn.net/a596620989/article/details/6930479
 21.com.asiainfo.chapter11.Test26对于LinkedHashMap测试结果的顺序貌似不正确
+22、优先级队列在添加元素的时候会排序，但是添加完元素之后直接打印优先级队列并没有排序，why？
