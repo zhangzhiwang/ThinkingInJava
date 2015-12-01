@@ -26,5 +26,3 @@
 
 
 underline:
-1、p238  11.12下面一句话。对AbstractCollection的解释详见Test60
-2、p239第一句话，加上对象类型的解释（最下面）
