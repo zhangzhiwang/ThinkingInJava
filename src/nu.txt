@@ -20,6 +20,7 @@
 21.com.asiainfo.chapter11.Test26对于LinkedHashMap测试结果的顺序貌似不正确
 22、优先级队列在添加元素的时候会排序，但是添加完元素之后直接打印优先级队列并没有排序，why？
 23、栈是后进先出，直接打印栈或者用get()的方式打印，元素输出顺序貌似不符合后进先出，详见Test69
+24、System.out与System.err，可以参考com.asiainfo.chapter12.Test5
 
 
 
