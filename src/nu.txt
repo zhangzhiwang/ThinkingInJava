@@ -27,4 +27,3 @@
 
 
 underline:
-p255练习6上面两段话  疑问：为什么会默认调用getMessage()？
