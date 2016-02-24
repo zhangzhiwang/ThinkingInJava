@@ -63,7 +63,7 @@ public class Test7 {
 		
 		System.out.println(s9.contentEquals("ac"));//http://www.coderanch.com/t/602244/java/java/difference-equals-contentEquals-String-class
 		StringBuilder sb1 = new StringBuilder("ab");
-		System.out.println(s9.equals(sb1));// false，为什么看String的equals()方法源码，所以不能简单地理解String的equals()方法只比较内容，只有在被比较对象是String类型时才会去比较内容（一句话：String的equals()方法只能和另一个String比较内容，否则返回false），而contentEquals()方法的比较范围更广
+		System.out.println(s9.equals(sb1));// false，为什么看String的equals()方法源码，所以不能简单地理解String的equals()方法只比较内容，只有在被比较对象是String类型时才会去比较内容（一句话：String的equals()方法只能和另一个String比较内容，否则返回false），而contentEquals()方法可以与所有CharSequence的实现类比较内容，比较范围更广
 		System.out.println(s9.contentEquals(sb1));
 	}
 }
