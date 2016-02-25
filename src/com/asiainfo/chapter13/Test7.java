@@ -70,5 +70,54 @@ public class Test7 {
 		String s11 = "aBcdef";
 		String s12 = "qDefef";
 		System.out.println(s11.regionMatches(true, 3, s12, 1, 3));//可详见jdk api
+		
+		System.out.println(s11.startsWith("aBc"));
+		System.out.println(s11.endsWith("df"));
+		
+		String s13 = "abccaabsdf";
+		System.out.println(s13.indexOf('a',2));//方法的名字都是自解释型的，从名字可以区分出charAt()、indexOf()、toCharArray()
+		System.out.println(s13.indexOf("ab", 2));
+		System.out.println(s13.lastIndexOf('a', 4));
+		System.out.println(s13.lastIndexOf("ab", 3));
+		System.out.println(s13.indexOf('i'));
+		System.out.println("-----------");
+		
+		String s14 = "abcde";
+		System.out.println(s14.substring(1));
+		System.out.println(s14.substring(1, 3));//左闭右开区间
+		System.out.println(s14.subSequence(1, 3));
+		
+		System.out.println(s14.concat("fg"));
+		System.out.println("-----------");
+		String s15 = "abcDEabc";
+		System.out.println(s15.replace('a', 'w'));
+		System.out.println(s15);//s15不变
+		System.out.println(s15.replace("abc", "www"));
+		
+		System.out.println(s15.toLowerCase());
+		System.out.println(s15.toUpperCase());
+		
+		String s16 = "   a b c   ";
+		System.out.println(s16.trim());
+		System.out.println("---------------");
+		
+		System.out.println(String.valueOf(new char[]{'a', 'b', 'c'}));
+		System.out.println(String.valueOf(new char[]{'a', 'b', 'c'}, 1, 2));
+		byte b = 1;
+		short s = 1;
+		char c = 'a';
+		int i = 1;
+		long l = 1;
+		float f = 1.0f;
+		double d = 1.0;
+		Integer ii = 1;
+		System.out.println(String.valueOf(b));
+		System.out.println(String.valueOf(s));
+		System.out.println(String.valueOf(c));
+		System.out.println(String.valueOf(i));
+		System.out.println(String.valueOf(l));
+		System.out.println(String.valueOf(f));
+		System.out.println(String.valueOf(d));
+		System.out.println(String.valueOf(ii));
 	}
 }
