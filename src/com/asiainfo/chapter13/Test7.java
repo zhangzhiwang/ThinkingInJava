@@ -65,5 +65,10 @@ public class Test7 {
 		StringBuilder sb1 = new StringBuilder("ab");
 		System.out.println(s9.equals(sb1));// false，为什么看String的equals()方法源码，所以不能简单地理解String的equals()方法只比较内容，只有在被比较对象是String类型时才会去比较内容（一句话：String的equals()方法只能和另一个String比较内容，否则返回false），而contentEquals()方法可以与所有CharSequence的实现类比较内容，比较范围更广
 		System.out.println(s9.contentEquals(sb1));
+		System.out.println("------------------------");
+		
+		String s11 = "aBcdef";
+		String s12 = "qDefef";
+		System.out.println(s11.regionMatches(true, 3, s12, 1, 3));//可详见jdk api
 	}
 }

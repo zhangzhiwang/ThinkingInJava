@@ -51,3 +51,4 @@ p285前两段勾上
 p284汇编旁边写上：字符串拼接的实现原理以及为什么StringBuilder的append()方法的效率要高于字符串的拼接
 p286最后一句：如果你想走捷径...
 p287第3、4段
+p288把regionMatcher()改成regionMatches()
