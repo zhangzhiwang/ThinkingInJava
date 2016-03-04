@@ -55,3 +55,4 @@ p288把regionMatcher()改成regionMatches()
 p297第1、2、3段勾上
 13.6.2那几张表画上重点符号
 p300第一段最后一句：多数正则表达式。。。         p300组后一段          在p300代码处的m.start()与m.end()、m.find()的地方写上Test18的注释
+p301 find()和find(int start)旁边写上二者的区别，详见Test18和Test22     练习11 (?i)表示不区分大小写
