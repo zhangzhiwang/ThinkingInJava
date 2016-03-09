@@ -42,8 +42,9 @@
 43、p308代码测不通，怎么读取当前文件啊？详见Exercise_15，运行Exercise_15程序会退出     练习15-19都没看懂答案
 44、异常层次结构图画上
 45、Class的getName()和getCanonicalName()的区别，详见api  Test3
-
-
+46、p318练习6没有做
+47、p315 SweetShop.java 中Class.forName()方法的参数如果不传入类的全名称就会抛异常，书里面的Class.forName("Gum");可以运行？
+48、14.2.1前两段勾上  p319第一句话
 
 
 
@@ -54,3 +55,4 @@ underline:
 p314第一段中间 如果某个对象。。。的String  第三段 这是rtti最基本。。。段尾
 p315第三段都勾上   第四段第一句话 第五段全勾上
 p316第二段 Class对象。。。      这个方法是class类。。。加载它  下面一段  如果Class.forName()找不到。。那句话勾上  下一段 无论何时。。。类型的Class引用。在这段话旁边写上 详见Test2
+p317最后一段
