@@ -18,6 +18,6 @@ public class Test31 extends Thread {
 	public static void main(String[] args) throws InterruptedException {
 		Test31 t = new Test31();
 		t.start();
-		t.interrupt();
+		t.interrupt();//interrupt()方法只是改变了线程的中断状态，即将中断状态改为true，而不是去切实执行线程中断操作
 	}
 }
