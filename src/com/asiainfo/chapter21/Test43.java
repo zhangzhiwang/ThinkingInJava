@@ -1,5 +1,8 @@
 package com.asiainfo.chapter21;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * IntGenerator
  * 
@@ -7,7 +10,13 @@ package com.asiainfo.chapter21;
  * @date 2016年3月29日 上午9:34:27
  */
 public class Test43 {
-	
+	public static void main(String[] args) {
+		EvenGenerator eg = new EvenGenerator();
+		ExecutorService es = Executors.newCachedThreadPool();
+		for (int i = 1; i <= 10; i++) {
+			es.execute(new EvenChecker(eg));
+		}
+	}
 }
 
 class IntGenerator {
@@ -26,15 +35,27 @@ private volatile boolean isCanceled;//默认为false
 	}
 }
 
+class EvenGenerator extends IntGenerator {
+	private int i;
+	
+	@Override
+	public int next() {
+		i++;
+		Thread.currentThread().yield();
+		i++;
+		return i;
+	}
+}
+
 class EvenChecker implements Runnable {
 	private IntGenerator intGenerator;
 
-	private EvenChecker(IntGenerator ig) {
+	public EvenChecker(IntGenerator ig) {
 		super();
 		this.intGenerator = ig;
 	}
 
-	private EvenChecker() {
+	public EvenChecker() {
 		super();
 	}
 	
@@ -49,5 +70,6 @@ class EvenChecker implements Runnable {
 				System.out.println(Thread.currentThread().getName() + " generates " + i);
 			}
 		}
+		System.out.println("finished!");
 	}
 }
