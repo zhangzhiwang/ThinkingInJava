@@ -20,11 +20,11 @@ public class Test64 implements Runnable {
 	}
 
 	public void met1() {
-		num++;
+		num++;//如果一个域的值依赖于他之前的值时，那么用volatile修饰该域不起作用
 	}
 	
 	public void met2() {
-		num = i + 1;
+		num = i + 1;//如果一个域的值收到其他域值得限制，那么用volatile修饰该域不起作用
 	}
 
 	public static void main(String[] args) throws InterruptedException {
