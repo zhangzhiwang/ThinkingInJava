@@ -77,7 +77,7 @@
 77、了解一下 Collections.synchronizedList()方法
 78、Test76  如果一个线程锁住了当前对象this，那么为什么另一个对象可以访问锁住this.o的方法呢？o不是this的一部分吗？
 79、ExecutorService的shutdown()和shutdownNow()有什么区别？见Test68
-
+80、volatile的原理是什么，有什么应用场景？
 
 
 
