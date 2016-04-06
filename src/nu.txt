@@ -73,8 +73,10 @@
 73、p681第七段第一句话：使用volatile而不是synchronized的唯一安全情况是类中只有一个可变的域。这句话是什么意思，为什么只有一个可变域才安全？
 74、p682汇编代码下面一段的解释和Test64注释里网址链接的解释不太一样：书上说在获取和放置之间另一个线程会修改值，但是注释里的网址上说获取之后会把这个值放到自己的线程栈里面，其它线程怎么会干预?
 75、p685练习14 见Exercise_14，熟悉一下Timer和TimerTask，为什么Exercise_14会一直运行？TimerTask的run()方法运行完不返回吗？
-
-
+76、P688第二段没看懂，结合前面的代码，为什么PairManager要有一个唯一的public方法getPair()？为什么要弄个副本出来？这个方法是必须的吗？
+77、了解一下 Collections.synchronizedList()方法
+78、Test76  如果一个线程锁住了当前对象this，那么为什么另一个对象可以访问锁住this.o的方法呢？o不是this的一部分吗？
+79、ExecutorService的shutdown()和shutdownNow()有什么区别？见Test68
 
 
 
