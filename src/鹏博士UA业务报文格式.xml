@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  <order_info>																		----订购基本信息节点
+	<so_serial_code>100275424590</so_serial_code>									----客户订单编号，对应业务指令调用表的customer_order_id
+
+    <so_order_id>100280992360</so_order_id>											----订单ID
+
+    <org_id>10001</org_id>															----受理营业厅
+    <own_org_id>7001</own_org_id>													----归属组织
+    <district_id>10001</district_id>												-----用户所属行政区域的地市的ID
+	<old_district_id>10001</old_district_id>
+    <op_id>6002</op_id>																---受理员工id
+    <op_code>hlh</op_code>															---受理员工工号
+    <op_name>黄丽红</op_name>														---受理员工姓名
+    <done_date>2013-01-23 11:09:43</done_date>										--- 受理时间
+
+    <region_code>578</region_code>													----CRM的产品归属地市编码：REGION_CODE
+    <area_code>578</area_code>
+    <old_area_code>578</old_area_code>
+    <order_grp_id/>
+
+	<order_kind>1</order_kind>														---订购类型(1包月订单、2单点订单)
+	<order_oper>1</order_oper>														-----定单操作，1.普通单 2改单  4缓装 
+
+    <channel_type>1</channel_type>													----渠道类型，具体以CRM为准
+    <channel_code>CRM</channel_code>												----渠道编码  ，具体以CRM为准
+    <channel_name>营业厅</channel_name>												---渠道名称，具体以CRM为准
+
+    <product_ins_id>110105638</product_ins_id>										----用户id ，对应CRM的用户实例ID
+
+	<is_main_prod>1</is_main_prod>													----是否主产品，主终端送：1，
+    <prod_code>800200000001</prod_code>												----产品编码，传CRM产品规格标识
+    <old_prod_code/>
+    <order_type_code>C_C_PRODCHG</order_type_code>									--产品操作，业务指令编码（从数据库中查询出来，给CRM）
+
+	<access_num>013004001051700024c10cd02b</access_num>								---业务接入号，传CRM的计费号码，可能是宽带账号，智能卡编号，终端MAC等。
+
+    <old_access_num/>
+    <access_way/>																	---接入方式
+
+    <old_access_way/>
+	<install_addr>丽水区镇乡 丽水街道 丽水社区 灯塔小区 10幢204</install_addr>		---安装地址
+    <old_install_addr>丽水区镇乡 丽水街道 丽水社区 灯塔小区 10幢204</old_install_addr>
+    <std_addr_id>1036354</std_addr_id>												---标准地址id
+    <old_std_addr_id>1036354</old_std_addr_id>
+	<std_addr_name>丽水区镇乡 丽水街道 丽水社区 灯塔小区 10幢204</std_addr_name>	---标准地址名称
+    <old_std_addr_name>丽水区镇乡 丽水街道 丽水社区 灯塔小区 10幢204</old_std_addr_name>
+
+
+	<pay_type_code>1</pay_type_code>												---付费类型编码，传CRM编码(1.预付费,2.后付费) 0 代表没用此字段
+    <pay_type_name/>																---付费类型名称  1.预付费,2.后付费
+	<fee_flag>1</fee_flag>															----收费标识，1.不需要后端收费 2.需要后端收费
+
+    <sla/>
+	<priority/>																		--优先级(10. 普通， 20.紧急, 30.加急)
+
+	<booking_start_date/>															--预约装机开始时间
+	<booking_end_date/>																---预约装机结束时间
+    <relate_prod_ins_id/>
+    <bind_access_code/>
+	<outline_flag>0</outline_flag>													---是否需要施工1：需要施工 0: 不需要施工
+	<is_mixed_flag/>																---是否是融合套餐，0：不是融合套餐产品 1：融合套餐产品
+    <product_number>1</product_number>												---用户数
+    <product_type>0</product_type>													---产品类型，如小二楼用户、平房用户等
+	<busi_type>2</busi_type>														---业务类型(1 数字业务 2 互动业务 3 宽带业务 4 语音业务 5 增值业务)
+    <remark/>
+
+  </order_info>
+
+  <order_exp>
+
+    <order_attr>
+      <order_prop_code>contact_tel</order_prop_code>								-----联系人电话
+      <order_prop_value>13455556789</order_prop_value>
+      <old_order_prop_value>13455556789</old_order_prop_value>
+      <order_prop_value_desc>Phone Number</order_prop_value_desc>
+      <old_order_prop_value_desc>old Phone Number</old_order_prop_value_desc>
+    </order_attr>
+
+	 <order_attr>
+      <order_prop_code>PROV_CODE</order_prop_code>								-----省份编码
+      <order_prop_value>13455556789</order_prop_value>
+      <old_order_prop_value>13455556789</old_order_prop_value>
+      <order_prop_value_desc>PROV_CODE</order_prop_value_desc>
+      <old_order_prop_value_desc>old PROV_CODE</old_order_prop_value_desc>
+    </order_attr>
+
+  </order_exp>
+
+  <prod_exp>
+    <prod_attr>
+      <prod_prop_code>LOGIN_NAME</prod_prop_code>  ----登陆名
+      <prod_prop_value>013004001051700024c10cd02b</prod_prop_value>
+      <prod_prop_value_desc>LOGIN_NAME</prod_prop_value_desc>
+      <old_prod_prop_value/>
+      <old_prod_prop_value_desc>OLD LOGIN NAME</old_prod_prop_value_desc>
+    </prod_attr>
+
+	<prod_attr>
+      <prod_prop_code>ALIAS_LOGIN_NAME</prod_prop_code>  ----登陆别名
+      <prod_prop_value>013004001051700024c10cd02b</prod_prop_value>
+      <prod_prop_value_desc>ALIAS_LOGIN_NAME</prod_prop_value_desc>
+      <old_prod_prop_value/>
+      <old_prod_prop_value_desc>OLD ALIAS_LOGIN_NAME</old_prod_prop_value_desc>
+    </prod_attr>
+
+    <prod_attr>
+      <prod_prop_code>LOGIN_PASSWORD</prod_prop_code> ----登陆密码
+      <prod_prop_value>222000</prod_prop_value>
+      <prod_prop_value_desc>LOGIN_PASSWORD</prod_prop_value_desc>
+      <old_prod_prop_value>222000</old_prod_prop_value>
+      <old_prod_prop_value_desc>OLD LOGIN PASSWORD</old_prod_prop_value_desc>
+    </prod_attr>
+    <prod_attr>
+      <prod_prop_code>USER_STATE</prod_prop_code>  -----用户状态（1正常、2失效 （默认正常））
+      <prod_prop_value>1</prod_prop_value>
+      <prod_prop_value_desc>USER_STATE</prod_prop_value_desc>
+      <old_prod_prop_value>1</old_prod_prop_value>
+      <old_prod_prop_value_desc>OLD USER STATE</old_prod_prop_value_desc>
+    </prod_attr>
+	
+  </prod_exp>
+
+  <prod_srv_info>
+    <prod_srv>
+      <prod_srv_code>800700000244</prod_srv_code> ---服务编号（对应服务表的主键SERVICE_ID）
+      <srv_act_type>2</srv_act_type>---服务操作类型，1=增，2=删，3=改，4=持
+      <valid_date/> ----生效时间，如果是将来，就是预约
+      <prod_srv_attr_exp>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>B0ND_POLICY</prod_srv_prop_code>  ----绑定策略
+			<prod_srv_prop_value>2</prod_srv_prop_value> ----0—不绑定；1--绑定外层vlan；2--绑定内层vlan；3--绑定完整vlan;默认为0-不绑定
+			<prod_srv_prop_value_desc>B0ND_POLICY</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD B0ND_POLICY</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>UPLOAD_VLAN</prod_srv_prop_code>  ----是否上报vlan信息
+			<prod_srv_prop_value>1</prod_srv_prop_value> ----0 – 不上报;1 – 上报
+			<prod_srv_prop_value_desc>UPLOAD_VLAN</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD UPLOAD_VLAN</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>JOIN_TIME_POLICY</prod_srv_prop_code>  ----接入时段策略
+			<prod_srv_prop_value>0</prod_srv_prop_value> ----0— 无限制;1— 每日7:00—21:00允许接入
+			<prod_srv_prop_value_desc>JOIN_TIME_POLICY</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD JOIN_TIME_POLICY</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>BAND_WIDTH</prod_srv_prop_code>  ----基础带宽
+			<prod_srv_prop_value>2</prod_srv_prop_value>
+			<prod_srv_prop_value_desc>BAND_WIDTH</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD BAND_WIDTH</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>DYNAMIC_WIDTH_POLICY</prod_srv_prop_code>  ----动态带宽策略
+			<prod_srv_prop_value>0</prod_srv_prop_value>     -----0— 无动态带宽;1— 每日7:00—21:00 100M, 21:00—7:00 50M
+			<prod_srv_prop_value_desc>DYNAMIC_WIDTH_POLICY</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD DYNAMIC_WIDTH_POLICY</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>MAX_RUNNING_USER</prod_srv_prop_code>  ----最大并发连接数
+			<prod_srv_prop_value>2</prod_srv_prop_value>
+			<prod_srv_prop_value_desc>MAX_RUNNING_USER</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD MAX_RUNNING_USER</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>IP_ADDRESS_POOL</prod_srv_prop_code>  ----地址池
+			<prod_srv_prop_value>2</prod_srv_prop_value>
+			<prod_srv_prop_value_desc>IP_ADDRESS_POOL</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD IP_ADDRESS_POOL</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>STATIC_IP</prod_srv_prop_code>  ----静态IP
+			<prod_srv_prop_value>192.168.1.101</prod_srv_prop_value>
+			<prod_srv_prop_value_desc>STATIC_IP</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD STATIC_IP</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>GREEN_INTERNET_POLICY</prod_srv_prop_code>  ----绿色上网策略
+			<prod_srv_prop_value>22</prod_srv_prop_value>
+			<prod_srv_prop_value_desc>GREEN_INTERNET_POLICY</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD GREEN_INTERNET_POLICY</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+		 <prod_srv_attr>
+			<prod_srv_prop_code>MONTHLY_JOIN_TIMEOUT_MAX</prod_srv_prop_code>  ----每自然月最大接入时长(分钟)
+			<prod_srv_prop_value>0</prod_srv_prop_value>      ----   0--无限制;其他值：每月最大使用时长（超时自动断线）
+			<prod_srv_prop_value_desc>MONTHLY_JOIN_TIMEOUT_MAX</prod_srv_prop_value_desc>
+			<old_prod_srv_prop_value/>
+			<old_prod_srv_prop_value_desc>OLD MONTHLY_JOIN_TIMEOUT_MAX</old_prod_srv_prop_value_desc>
+		 </prod_srv_attr>
+
+	  </prod_srv_attr_exp>
+    </prod_srv>
+    <prod_srv>
+      <prod_srv_code>800700010028</prod_srv_code>
+      <srv_act_type>4</srv_act_type>
+      <valid_date/>
+      <prod_srv_attr_exp></prod_srv_attr_exp>
+    </prod_srv>
+    <prod_srv>
+      <prod_srv_code>800700010080</prod_srv_code>
+      <srv_act_type>2</srv_act_type>
+      <valid_date/>
+      <prod_srv_attr_exp></prod_srv_attr_exp>
+    </prod_srv>
+    <prod_srv>
+      <prod_srv_code>800700010007</prod_srv_code>
+      <srv_act_type>2</srv_act_type>
+      <valid_date/>
+      <prod_srv_attr_exp></prod_srv_attr_exp>
+    </prod_srv>
+    <prod_srv>
+      <prod_srv_code>800700010019</prod_srv_code>
+      <srv_act_type>2</srv_act_type>
+      <valid_date/>
+      <prod_srv_attr_exp></prod_srv_attr_exp>
+    </prod_srv>
+  </prod_srv_info>
+  <prod_pkg_info> ------产品，一般互动、宽带 会用到
+    <prod_pkg>
+      <prod_pkg_code>1001</prod_pkg_code> ----产品表的id
+      <prod_pkg_inst_id>200314135155</prod_pkg_inst_id>  ---实例 id，就是订购产品id
+      <prod_pkg_type>1</prod_pkg_type>  ---产品类型  1 互动 2 amsp 
+      <pkg_act_type>2</pkg_act_type> ---产品操作类型 ，1=增，2=删，3=改，4=持
+      <prod_pkg_state>1</prod_pkg_state> ----产品状态
+      <old_prod_pkg_state>1</old_prod_pkg_state>
+      <os_status/> ----产品停机位
+      <old_os_status/>
+      <valid_date>2013-01-23 10:31:12</valid_date> ----产品生效时间
+      <old_valid_date>2013-01-23 10:31:12</old_valid_date>
+      <prod_pkg_service_id>1003</prod_pkg_service_id> ----分业务id
+      <prod_pkg_attr_exp></prod_pkg_attr_exp>
+    </prod_pkg>
+    <prod_pkg>
+      <prod_pkg_code>800600040002</prod_pkg_code>
+      <prod_pkg_inst_id>200314135154</prod_pkg_inst_id>
+      <prod_pkg_type>1</prod_pkg_type>
+      <pkg_act_type>2</pkg_act_type>
+      <prod_pkg_state>1</prod_pkg_state>
+      <old_prod_pkg_state>1</old_prod_pkg_state>
+      <os_status/>
+      <old_os_status/>
+      <valid_date>2013-01-23 10:31:12</valid_date>
+      <old_valid_date>2013-01-23 10:31:12</old_valid_date>
+      <prod_pkg_service_id>1006</prod_pkg_service_id>
+      <prod_pkg_attr_exp></prod_pkg_attr_exp>
+    </prod_pkg>
+  </prod_pkg_info>
+  <mac_srv_info></mac_srv_info>
+  <prod_eqpt_info>  ------设备节点
+  </prod_eqpt_info>
+
+  <cust_info>																	---客户信息节点
+    <cust_id>128488421</cust_id>												-----客户标识
+    <cust_code>02006560</cust_code>												-----客户编码
+
+    <old_cust_code>02006560</old_cust_code> 
+
+    <cust_name>aabb</cust_name>													----客户名称
+
+    <old_cust_name>aabb</old_cust_name>
+    <cust_kind/>																-----客户分类，需要提供字典(CRM提供)
+
+    <cust_type>1</cust_type>													--客户类型公众客户／商业客户等,由CRM提供具体的字典 1	公众客户；2   商业客户
+
+    <cust_level>4</cust_level>													---客户等级
+
+    <old_cust_level>4</old_cust_level>
+    <cust_cert_type>3</cust_cert_type>											---客户证件类型
+
+    <cust_cert_no>222</cust_cert_no>											---客户证件号码
+
+    <reside_addr/>																--客户证件地址
+
+    <old_reside_addr/>
+  </cust_info>
+  <sla_info></sla_info>
+</root>

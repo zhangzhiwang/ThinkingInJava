@@ -1,0 +1,198 @@
+
+<root>
+	<order_info>                   <!--订单信息 -->
+		<so_serial_code>11041913304209</so_serial_code>        <!--客户订单id，对应crm客户订单表的主键，该表记录客户的信息。前台页面做的业务到crm会生成若干订单（详见《Omframe培训大纲.ppt》），客户订单和产品规格订单就是其中的两个 -->
+		<so_order_id>11042059464366</so_order_id>              <!--产品规格订单id -->
+		<org_id>100018107</org_id>                             <!--受理营业厅，即操作员所属组织，在组织表sec.sec_organize中定义，对应前台宽带新装页面的受理单位 -->
+		<own_org_id>30000002</own_org_id>                      <!--归属组织，指用户的标准地址对应的组织（营业厅） -->
+		<district_id>40000100</district_id>                    <!--用户所属行政区域的地市的ID，对应页面中标准地址的行政区域，在行政区域表base.bs_district定义 -->
+		<old_district_id></old_district_id>                    <!-- 老标准地址，移机的时候会用到 -->
+		<op_id>1000008727</op_id>                              <!-- 操作员id（业务受理人员或系统登录用户），在操作员表sec.sec_operator定义 -->
+		<op_code>TESTGAOLIANG</op_code>						   <!-- 操作员编码，在操作员表sec.sec_operator定义 -->
+		<op_name>厂家测试账号 </op_name>                            <!-- 操作员姓名 -->
+		<done_date>2016-06-13 12:49:25</done_date>             <!-- 业务受理时间 -->
+		<region_code>110</region_code>                         <!-- CRM的产品归属地市编码 ？ -->
+		<area_code>110</area_code>                             <!-- ？ -->
+		<old_area_code></old_area_code>                        <!-- ？ -->
+		<order_kind>1</order_kind>                             <!-- 订单类型，说明：目前该字段尚未用到，crm将该值写死为1，该字段的取值范围未知。目前鹏博士没用到这两个（order_kind、order_oper）参数，鹏博士crm系统是从辽宁移动系统改过来的，所以估计是移动以前的业务有用到。如有用到可参考《鹏博士UA业务报文格式.xml》有关该字段的说明 -->
+		<order_oper>1</order_oper>                             <!-- 订单操作，说明：同上 -->
+		<channel_type>1</channel_type>                         <!-- 渠道类型，具体以CRM为准，在字典表（pboss.sf_dictionary）和静态数据表（pboss.sf_static_data）定义 -->
+		<channel_code>CRM</channel_code>                       <!-- 渠道编码，具体以CRM为准 -->
+		<channel_name>营业厅 </channel_name>                      <!-- 渠道名称，具体以CRM为准 -->
+		<product_ins_id>41104000794546</product_ins_id>        <!-- 产品规格实例id，对应用户id ，对应CRM的用户实例ID，有关crm的逻辑可参考《Omframe培训大纲.ppt》 -->
+		<is_main_prod>1</is_main_prod>                         <!-- 是否主产品 ？ -->
+		<prod_code>171000000003</prod_code>                    <!-- 产品编码，传CRM产品规格标识 ? -->
+		<old_prod_code></old_prod_code>                        <!-- ？ -->
+		<order_type_code>C_C_INSTALL</order_type_code>         <!-- 产品操作，业务指令编码 -->
+		<access_num>11010100158915</access_num>                <!-- 业务接入号，传CRM的计费号码，可能是宽带账号，智能卡编号，终端MAC等 -->
+		<old_access_num></old_access_num>
+		<access_way></access_way>                              <!-- 接入方式 -->
+		<old_access_way></old_access_way>
+		<install_addr>朝阳区 劲松街道 劲松1区-9区 劲松六区/H-BJ-081063补充地址test</install_addr>    <!-- 标准地址，包括安装地址和补充地址 ？ -->
+		<old_install_addr></old_install_addr>                  <!-- ？ -->
+		<std_addr_id>105131181</std_addr_id>                   <!-- 标准地址id -->
+		<old_std_addr_id></old_std_addr_id>                    <!-- ？ -->
+		<std_addr_name>朝阳区 劲松街道 劲松1区-9区 劲松六区/H-BJ-081063</std_addr_name>            <!-- 标准地址名称，这里是安装地址 -->
+		<old_std_addr_name></old_std_addr_name>                <!-- ？ -->
+		<pay_type_code>1</pay_type_code>                       <!-- 付费类型编码，传CRM编码(1.预付费,2.后付费) 0 代表没用此字段 -->
+		<pay_type_name></pay_type_name>                        <!-- 付费类型名称 1.预付费,2.后付费 -->
+		<fee_flag>1</fee_flag>                                 <!-- 收费标识，1.不需要后端收费 2.需要后端收费 ？ -->
+		<sla></sla>                                            <!-- 此字段尚未知什么意思 -->
+		<priority></priority>                                  <!-- 优先级(10. 普通， 20.紧急, 30.加急) -->
+		<booking_start_date></booking_start_date>              <!-- 预约装机开始时间 ？ -->
+		<booking_end_date></booking_end_date>                  <!-- 预约装机结束时间 -->
+		<relate_prod_ins_id></relate_prod_ins_id>              <!-- 此字段尚未知什么意思 -->
+		<bind_access_code></bind_access_code>                  <!-- 此字段尚未知什么意思 -->
+		<outline_flag>0</outline_flag>                         <!-- 是否需要施工1：需要施工 0: 不需要施工 -->
+		<is_mixed_flag>1</is_mixed_flag>                       <!-- 是否是融合套餐，0：不是融合套餐产品 1：融合套餐产品 -->
+		<product_number>1</product_number>                     <!-- 用户数 -->
+		<product_type>1</product_type>                         <!-- 产品类型，如小二楼用户、平房用户等 ？ -->
+		<busi_type>3</busi_type>                               <!-- 业务类型(1 数字业务 2 互动业务 3 宽带业务 4 语音业务 5 增值业务) -->
+		<remark></remark>                                      <!-- 备注 -->
+	</order_info>
+	<order_grp_id></order_grp_id>   <!-- ? -->
+	<order_exp>                     <!-- 订单描述（exp暂且翻译为描述，无从参考，下同） -->
+		<order_attr>                <!-- 订单属性 -->
+			<order_prop_code>contact_tel</order_prop_code>     <!-- 联系人号码，对应前台客户信息的联系人号码 -->
+			<order_prop_value>83802080</order_prop_value>
+			<old_order_prop_value></old_order_prop_value>
+			<order_prop_value_desc>联系电话</order_prop_value_desc>
+			<old_order_prop_value_desc></old_order_prop_value_desc>
+		</order_attr>
+		<order_attr>
+			<order_prop_code>PROV_CODE</order_prop_code>        <!-- 在bs_district里面定义 -->
+			<order_prop_value>10</order_prop_value>
+			<old_order_prop_value></old_order_prop_value>
+			<order_prop_value_desc>省份编码</order_prop_value_desc>
+			<old_order_prop_value_desc></old_order_prop_value_desc>
+		</order_attr>
+		<order_attr>
+			<order_prop_code>ORDER_WORK_FLOW</order_prop_code>     <!-- pboss定义？ -->
+			<order_prop_value></order_prop_value>
+			<old_order_prop_value></old_order_prop_value>
+			<order_prop_value_desc>报装流程设定</order_prop_value_desc>
+			<old_order_prop_value_desc></old_order_prop_value_desc>
+		</order_attr>
+		<order_attr>
+			<order_prop_code>OLD_SO_SERIAL_CODE</order_prop_code>       <!-- -->
+			<order_prop_value>0</order_prop_value>
+			<old_order_prop_value></old_order_prop_value>
+			<order_prop_value_desc>历史受理流水号</order_prop_value_desc>
+			<old_order_prop_value_desc></old_order_prop_value_desc>
+		</order_attr>
+	</order_exp>
+	<prod_exp>                      <!-- 产品描述 -->
+		<prod_attr>                 <!-- 产品属性 -->
+			<prod_prop_code>LOGIN_NAME</prod_prop_code>       <!-- 登录名，对应前台费用信息的资费名称 -->
+			<prod_prop_value>11010100158915</prod_prop_value>
+			<prod_prop_value_desc>LOGIN_NAME</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD LOGIN NAME</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>LOGIN_PASSWORD</prod_prop_code>   <!-- 登陆密码，新装时为用户上网登陆的初试密码，此密码会打印在受理单上 -->
+			<prod_prop_value>0lhcse</prod_prop_value>
+			<prod_prop_value_desc>LOGIN_PASSWORD</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD LOGIN PASSWORD
+			</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>USER_STATE</prod_prop_code>       <!-- 用户状态，在ua.ua_dictionary和ua.ua_static_data中定义 -->
+			<prod_prop_value>1</prod_prop_value>              <!-- 具体值详见上面两张表 -->
+			<prod_prop_value_desc>USER_STATE</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD USER STATE</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>USER_TYPE</prod_prop_code>        <!-- 用户类型 -->
+			<prod_prop_value>1</prod_prop_value>              <!-- 数据库暂无此配置，具体值不清楚 -->
+			<prod_prop_value_desc>USER_TYPE</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD_USER_TYPE</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>JOIN_TIME</prod_prop_code>        <!-- 业务受理时间 -->
+			<prod_prop_value>2016-06-13 12:49:32</prod_prop_value>
+			<prod_prop_value_desc>JOIN_TIME</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD_JOIN_TIME</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>MAIN_PROD</prod_prop_code>        <!-- 主产品，对应前台产品信息的套餐名称 -->
+			<prod_prop_value>续费大.麦超级宽带200M上行50M/6个月/998元</prod_prop_value>
+			<prod_prop_value_desc>MAIN_PROD</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD MAIN_PROD</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>ALIAS_LOGIN_NAME</prod_prop_code> <!-- 登录名别名 -->
+			<prod_prop_value></prod_prop_value>
+			<prod_prop_value_desc>ALIAS_LOGIN_NAME</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>OLD_ALIAS_LOGIN_NAME
+			</old_prod_prop_value_desc>
+		</prod_attr>
+		<prod_attr>
+			<prod_prop_code>B0ND_POLICY</prod_prop_code>  <!-- 绑定政策 -->
+			<prod_prop_value>0</prod_prop_value>
+			<prod_prop_value_desc>B0ND_POLICY</prod_prop_value_desc>
+			<old_prod_prop_value></old_prod_prop_value>
+			<old_prod_prop_value_desc>B0ND_POLICY</old_prod_prop_value_desc>
+		</prod_attr>
+	</prod_exp>
+	<prod_srv_info>                 <!-- 产品服务信息 -->
+		<prod_srv>                  <!-- 产品服务 -->
+			<prod_srv_code>141000100237</prod_srv_code>      <!-- 产品服务编码，对应服务表的主键SERVICE_ID -->
+			<srv_act_type>1</srv_act_type>                   <!-- 服务操作类型：1=增，2=删，3=改，4=持，在pboss.sf_dictionary和pboss.sf_static_data里面定义 -->
+			<valid_date></valid_date>                        <!-- 生效时间，如果是将来，就是预约？ -->
+			<prod_srv_attr_exp>                              <!-- 产品服务属性描述 -->
+				<prod_srv_attr>                              <!-- 产品服务属性 -->
+					<prod_srv_prop_code>IP_ADDRESS_POOL</prod_srv_prop_code>
+					<prod_srv_prop_value>0</prod_srv_prop_value>
+					<prod_srv_prop_value_desc>IP地址池（个人）</prod_srv_prop_value_desc>
+					<old_prod_srv_prop_value></old_prod_srv_prop_value>
+					<old_prod_srv_prop_value_desc></old_prod_srv_prop_value_desc>
+				</prod_srv_attr>
+				<prod_srv_attr>
+					<prod_srv_prop_code>STATIC_IP</prod_srv_prop_code>
+					<prod_srv_prop_value>0</prod_srv_prop_value>
+					<prod_srv_prop_value_desc>静态IP（个人）</prod_srv_prop_value_desc>
+					<old_prod_srv_prop_value></old_prod_srv_prop_value>
+					<old_prod_srv_prop_value_desc></old_prod_srv_prop_value_desc>
+				</prod_srv_attr>
+				<prod_srv_attr>
+					<prod_srv_prop_code>DOMAIN</prod_srv_prop_code>
+					<prod_srv_prop_value>0</prod_srv_prop_value>
+					<prod_srv_prop_value_desc>域（个人）</prod_srv_prop_value_desc>
+					<old_prod_srv_prop_value></old_prod_srv_prop_value>
+					<old_prod_srv_prop_value_desc></old_prod_srv_prop_value_desc>
+				</prod_srv_attr>
+			</prod_srv_attr_exp>
+		</prod_srv>
+	</prod_srv_info>
+
+	<prod_pkg_info>              <!-- 产品包信息，可参考《鹏博士UA业务报文格式.xml》 -->
+	</prod_pkg_info>
+	<mac_srv_info>               <!-- ？ -->
+	</mac_srv_info>
+	<prod_eqpt_info>             <!-- 设备节点，可参考《鹏博士UA业务报文格式.xml》 -->
+	</prod_eqpt_info>
+	<cust_info>                  <!-- 客户信息，对应前台页面的客户信息 -->
+		<cust_id>22517285</cust_id>             <!-- 客户标识 -->
+		<cust_code>140270kh0183</cust_code>     <!-- 客户编码 -->
+		<old_cust_code></old_cust_code>
+		<cust_name>汉水桥</cust_name>             <!-- 客户姓名 -->
+		<old_cust_name></old_cust_name>
+		<cust_kind></cust_kind>                 <!-- 客户分类，在pboss.sf_dictionary和pboss.sf_static_data中定义 -->
+		<cust_type>1</cust_type>                <!-- 客户类型，在ua.ua_dictionary和ua.ua_static_data中定义 -->
+		<cust_level>0</cust_level>              <!-- 客户等级，在pboss.sf_dictionary和pboss.sf_static_data中定义 -->
+		<old_cust_level></old_cust_level>
+		<cust_cert_type>4</cust_cert_type>      <!-- 客户证件类型（从哪里取的？和pboss.sf_static_data中定义的不一样）？ -->
+		<cust_cert_no>12345678</cust_cert_no>   <!-- 客户证件号码 -->
+		<reside_addr>仁寿路5号</reside_addr>       <!-- 客户证件地址 -->
+		<old_reside_addr></old_reside_addr>
+	</cust_info>
+	<sla_info>                                  <!-- ? -->
+	</sla_info>
+</root>
