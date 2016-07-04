@@ -1,19 +1,19 @@
 
 <root>
 	<order_info>                   <!--订单信息 -->
-		<so_serial_code>11041913304209</so_serial_code>        <!--客户订单id，对应crm客户订单表的主键，该表记录客户的信息。前台页面做的业务到crm会生成若干订单（详见《Omframe培训大纲.ppt》），客户订单和产品规格订单就是其中的两个 -->
-		<so_order_id>11042059464366</so_order_id>              <!--产品规格订单id -->
+		<so_serial_code>11041913304209</so_serial_code>        <!--客户订单id，对应crm客户订单表的主键（该表记录客户的信息），对应i_busi_command_call的customer_order_id字段。前台页面做的业务到crm会生成若干订单（详见《Omframe培训大纲.ppt》），客户订单和产品规格订单就是其中的两个 -->
+		<so_order_id>11042059464366</so_order_id>              <!--产品规格订单id，对应pboss.sf_order_yyyy的so_order_id字段 -->
 		<org_id>100018107</org_id>                             <!--受理营业厅，即操作员所属组织，在组织表sec.sec_organize中定义，对应前台宽带新装页面的受理单位 -->
 		<own_org_id>30000002</own_org_id>                      <!--归属组织，指用户的标准地址对应的组织（营业厅） -->
-		<district_id>40000100</district_id>                    <!--用户所属行政区域的地市的ID，对应页面中标准地址的行政区域，在行政区域表base.bs_district定义 -->
-		<old_district_id></old_district_id>                    <!-- 老标准地址，移机的时候会用到 -->
+		<district_id>40000100</district_id>                    <!--用户所属行政区域的地市的ID，对应页面中标准地址栏的安装地址中的行政区域，在行政区域表base.bs_district定义 -->
+		<old_district_id></old_district_id>                    <!-- 老标准地址行政区域的地市的ID，移机的时候会用到 -->
 		<op_id>1000008727</op_id>                              <!-- 操作员id（业务受理人员或系统登录用户），在操作员表sec.sec_operator定义 -->
 		<op_code>TESTGAOLIANG</op_code>						   <!-- 操作员编码，在操作员表sec.sec_operator定义 -->
-		<op_name>厂家测试账号 </op_name>                            <!-- 操作员姓名 -->
+		<op_name>厂家测试账号 </op_name>                            <!-- 操作员姓名，在sec.sec_staff中定义 -->
 		<done_date>2016-06-13 12:49:25</done_date>             <!-- 业务受理时间 -->
-		<region_code>110</region_code>                         <!-- CRM的产品归属地市编码 ？ -->
-		<area_code>110</area_code>                             <!-- ？ -->
-		<old_area_code></old_area_code>                        <!-- ？ -->
+		<region_code>110</region_code>                         <!-- CRM的产品归属地市编码，即用户订购的产品所属地市 -->
+		<area_code>110</area_code>                             <!-- 区域编码，鹏博士的area_code = region_code -->
+		<old_area_code></old_area_code>                        <!-- 老区域编码，如果用户的标准地址换地市的话，那么产品所属地市也会变，p.s.套餐是按地市来配置的 -->
 		<order_kind>1</order_kind>                             <!-- 订单类型，说明：目前该字段尚未用到，crm将该值写死为1，该字段的取值范围未知。目前鹏博士没用到这两个（order_kind、order_oper）参数，鹏博士crm系统是从辽宁移动系统改过来的，所以估计是移动以前的业务有用到。如有用到可参考《鹏博士UA业务报文格式.xml》有关该字段的说明 -->
 		<order_oper>1</order_oper>                             <!-- 订单操作，说明：同上 -->
 		<channel_type>1</channel_type>                         <!-- 渠道类型，具体以CRM为准，在字典表（pboss.sf_dictionary）和静态数据表（pboss.sf_static_data）定义 -->
