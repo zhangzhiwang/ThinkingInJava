@@ -15,7 +15,7 @@ public class Test39 {
 	public static void addMethod(Set<String> subSet, Set<String> superSet) {
 		Set<String> diffSet = Test35.different(subSet, superSet);
 		Set<String> objSet = methodSet(Object.class);
-		objSet.add("clone");
+		objSet.add("clone");//为什么要加上clone()方法，是因为Object的clone()方法是protected的，而HashSet的clone()方法是public的
 		Set<String> retSet = Test35.different(diffSet, objSet);
 		System.out.println(retSet);
 	}

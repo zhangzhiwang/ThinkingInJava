@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  */
 public class Test38 {
 	public static void main(String[] args) {
-		Method[] ms = Test38_2.class.getMethods();//获取该类及其父类（接口）的所有public方法
+		Method[] ms = Test38_2.class.getMethods();//获取该类及其父类（接口）的所有public方法，注：这里的父类是指多级父类，向上一直到Object
 		for (Method m : ms) {
 			System.out.print(m.getName() + "\t");
 		}
