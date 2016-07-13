@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 创建泛型数组方式一——使用List<T>代替T[]
+ * 使用List<T>代替T[]
  *
  * @author zhiwangzhang
  * @date 2016年7月13日 下午12:50:48
