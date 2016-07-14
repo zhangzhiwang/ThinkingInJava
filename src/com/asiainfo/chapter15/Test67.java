@@ -63,6 +63,25 @@ class Test67Son2<T extends Test67_1> extends Test67Fa<T>{
 	public Test67Son2(T t) {
 		super(t);
 	}
+	
+	public void m7() {
+		t.m3();
+	}
 }
+
+class Test67Son3<T extends Test67_2 & Test67_3> extends Test67Fa<T> {
+	public Test67Son3() {}
+	
+	public Test67Son3(T t) {
+		super(t);
+	}
+	
+	public void m8() {
+		t.m4();
+		t.m5();
+	}
+}
+
+class Test67_2_3 {}
 
 //class Test67Son3<T extends SuperTest67I> extends Test67Fa<T>{}//子类的泛型边界不能是（或包括）父类的泛型边界的父类。想想为什么，可以从多太或转型角度考虑
