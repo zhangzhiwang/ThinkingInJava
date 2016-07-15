@@ -25,3 +25,9 @@ class I implements H1 {}
 //class Test68_1<T extends G & H> extends Test68<T>{}//子类的泛型边界不能是（或包括）父类的泛型边界的父类
 
 class Test68_1<T extends I & H & H1> {}
+
+class Test68_2<T extends G1 & H> extends Test68<T> {}
+
+class Test68_3<T extends G & H> {}
+
+//class Test68_3_1<T extends G> extends Test68_3<T> {}//子类的泛型边界不能比父类的泛型边界小

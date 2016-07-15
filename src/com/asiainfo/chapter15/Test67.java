@@ -7,7 +7,25 @@ package com.asiainfo.chapter15;
  * @date 2016年7月14日 下午9:46:34
  */
 public class Test67 {
+	public <T extends Test67_2> void f1(Test67Fa<T> test67Fa) {
+		test67Fa.getT().m4();
+		test67Fa.getT().m1();
+		test67Fa.getT().m2();
+	}
 	
+	public <T extends Test67_2 & Test67_3> void f2(Test67Fa<T> test67Fa) {
+		test67Fa.getT().m4();
+		test67Fa.getT().m5();
+		test67Fa.getT().m1();
+		test67Fa.getT().m2();
+	}
+	
+	public static void main(String[] args) {
+		Test67 test67 = new Test67();
+		DogBoy d = new DogBoy();
+		test67.f1(d);
+		test67.f2(d);
+	}
 }
 
 interface SuperTest67I {}
@@ -82,6 +100,20 @@ class Test67Son3<T extends Test67_2 & Test67_3> extends Test67Fa<T> {
 	}
 }
 
-class Test67_2_3 {}
+class Test67_2_3 implements Test67_2, Test67_3 {
+	public void m4() {}
+	
+	public void m5() {}
+	
+	public void m1() {}
+	
+	public void m2() {}
+}
+
+class DogBoy extends Test67Son3<Test67_2_3> {
+	public DogBoy() {
+		super(new Test67_2_3());
+	}
+}
 
 //class Test67Son3<T extends SuperTest67I> extends Test67Fa<T>{}//子类的泛型边界不能是（或包括）父类的泛型边界的父类。想想为什么，可以从多太或转型角度考虑
